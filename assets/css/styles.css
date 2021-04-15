@@ -5,9 +5,14 @@ Logofarbe: #666
 Logofarbe in hover: #333
 Menüfarbe: #333 
 Menüfarbe in hover: #337ab7 */
+/* Die Farbe des Button “Read more” ist: #745cf9
+Die Farbe des Button:hover “Read more” ist: #5234f9 */
+* {
+  box-sizing: border-box;
+}
+
 body {
   margin: 0;
-  padding-top: 5px;
   font-family: "Raleway", sans-serif;
 }
 
@@ -16,6 +21,10 @@ header {
   border-top: 2px solid #333;
   border-bottom: 2px solid grey;
   padding: 0 10%;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: whitesmoke;
 }
 
 .logo {
@@ -42,11 +51,63 @@ ul > li > a:hover {
 nav {
   height: 100%;
   display: flex;
-  justify-content: space-between;
   align-items: center;
 }
 
 ul {
   list-style-type: none;
   display: flex;
+  padding: 0;
+  width: 80%;
+  justify-content: flex-end;
+}
+
+#home {
+  background: url("../img/photo-1443527216320-7e744084f5a7-1.jpg") no-repeat
+    center/cover;
+  height: 100vh;
+}
+
+#home h1,
+p {
+  text-align: center;
+  color: whitesmoke;
+}
+
+#home h1 {
+  padding-top: 40vh;
+  font-size: 4rem;
+}
+
+#button-box {
+  display: flex;
+  justify-content: center;
+}
+#home p {
+  margin-bottom: 10vh;
+}
+
+#button-box div {
+  color: whitesmoke;
+  padding: 20px 60px;
+}
+#button-box div:first-of-type {
+  background-color: #745cf9;
+  margin-right: 5px;
+}
+
+#button-box div:last-of-type {
+  border: 2px solid whitesmoke;
+  margin-left: 5px;
+}
+
+#button-box div:first-of-type:hover {
+  background-color: #5234f9;
+  cursor: pointer;
+}
+
+#button-box div:last-of-type:hover {
+  background-color: whitesmoke;
+  color: black;
+  cursor: pointer;
 }
